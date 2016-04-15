@@ -1,0 +1,62 @@
+Neuroevolution
+Combining Genetic Algorithms and Neural Networks
+Tags: neuralnetworks,geneticalgorithms,GANN
+
+Hamed Soleimani
+Student at University of Isfahan
+hamed1soleimani@gmail.com
+@hamed1soleimani
+
+* Classical Computer Programming
+
+- Examine given problem carfully
+- Consider every possible case
+- Represent the algorithm
+- Implement the computer program
+
+.image images/traditional.png
+
+* The new approach
+
+- Feed training framework  with  a  large  amount  of training  patterns
+- System learns these  patterns
+- System gains the ability of compute new unlearned patterns
+
+.image images/new.png
+
+* The problem
+
+In short, the problem with neural networks is that a number of parameter have to be set before any training can begin. However, there are no clear rules how to set these parameters.
+
+These parameters determine the success of the training.
+
+* The solution
+
+By combining genetic algorithms with neural networks (GANN), the genetic algorithm is used to find these parameters.
+
+The inspiration for this idea comes from nature: In real life, the success of an individual is not only determined by his knowledge and skills, which he gained through experience (the neural network training), it also depends on his genetic heritage (set by the genetic algorithm).
+
+* Neural Networks
+
+Both NN and GA were invented in the spirit of a biological metaphor. The biological metaphor for neural networks is the human brain. Like the brain, this computing model consists of many small units that are interconnected.
+
+These units (or nodes) have very simple abilities. Hence, the power of the model derives from the interplay of these units. It depends on the structure of their connections.
+
+* What is the neural network?
+
+From a mathematical point of view, a neural network is a function. It takes an input and produces an output. The input and output is represented by real numbers.
+A simple neural network may be illustrated like below.
+
+.image images/simple-network.png
+
+.caption This network consists of five units or neurons (the circles) and six connections (the arrows). The number next to each connection is called weight, it indicates the strength of the connection. The  constellation  of  neurons  and  connection  is  called  the architecture of  the  network, which is also called the topology.
+
+* Genetic Algorithms
+
+A genetic algorithm tries to simulate the natural evolution process. Its purpose is to optimize a set of parameters. In the original idea, the genetic information is encoded in a bit string of fixed length, called the parameter string or individual. Each individual represents a possible solution to the examined problem. The quality of the solution is stored in the fitness value. The basic GA operators are crossover, selection and mutation.
+
+For the GANN problem, it contains information about the construction of a neural network. 
+
+* Genetic Algorithms
+
+.image images/genetic-algorithms.png
