@@ -60,3 +60,46 @@ For the GANN problem, it contains information about the construction of a neural
 * Genetic Algorithms
 
 .image images/genetic-algorithms.png
+
+* Encoding the Network
+
+*** Genomes
+
+Information about the neural network is encoded in the genome of the genetic algorithm.
+
+At the beginning, a number of random individuals are generated. The individuals have to be evaluated, which means a neural network has to be designed according to the genome information. Its performance can be determined after training.
+
+Some GANN strategies rely only on the GA to find an optimal network; in these, no training takes place.
+
+* Encoding the Network
+
+*** Evaluation
+
+Then, they are evaluated and ranked. The fitness evaluation may take more into consideration than only the performance of the individual. Some approaches take the network size into account in order to generate small networks.
+
+Finally, crossover and mutation create new individuals that replace the worst - or all - members of the population.
+
+* Encoding the Network
+
+.image images/NNGA.png
+
+* The Search for Small Networks
+
+Most of the encoding strategies incorporate the network size in the evaluation function in order  to  find  optimal  networks  that  use  few  neurons  and  connections.  Often,  this  results  in two phases of the search. First, a good network is searched for. Then, the network size of the best individuals decreases.
+
+* The Problem of Overfitting
+
+One  classical  problem  of  neural  networks  is  called  overfitting,  which  occurs  especially with noisy data.
+It has been observed that excessive training results in decreased generalization. Instead of finding general properties of the different input patterns that match to a certain output, the training brings the network closer to each of the given input patterns. This results in less tolerance in dealing with new patterns.
+
+* The Solution of Overfitting
+
+It is suggested to use for the evaluation of the network performance a different set of patterns than for the training. Hence, only networks that generate the ability to generalize are evaluated high. This method was implemented in an approach called GENETICA.
+
+* What is the best?
+
+Back-propagation takes more time to reach the neighborhood of an optimal solution, but then reaches it more precisely. On the other hand, genetic algorithms investigate the entire search space. Hence, they reach faster the region of optimal solutions, but have difficulties to localize the exact point.
+
+.image images/best.png
+.caption Combining both search strategies seems to be the best thing to do.
+
