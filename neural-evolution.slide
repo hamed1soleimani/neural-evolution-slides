@@ -6,6 +6,7 @@ Hamed Soleimani
 Student at University of Isfahan
 hamed1soleimani@gmail.com
 @hamed1soleimani
+https://github.com/hamed1soleimani/neural-evolution-slides
 
 * Classical Computer Programming
 
@@ -102,4 +103,9 @@ Back-propagation takes more time to reach the neighborhood of an optimal solutio
 
 .image images/best.png
 .caption Combining both search strategies seems to be the best thing to do.
+
+
+* Resources
+
+- Combining Genetic Algorithms and Neural Networks: The Encoding Problem, A Thesis Presented for the Master of Science Degree, The University of Tennessee, Knoxville, Philipp Koehn, 1994
 
